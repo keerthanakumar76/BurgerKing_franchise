@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger King Franchise</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Your Food</h1>
+    <div class="food-options">
+      <label>
+        <input type="radio" name="food" value="burger"> Burger
+      </label>
+      <label>
+        <input type="radio" name="food" value="Fries"> Fries
+      </label>
+      <label>
+        <input type="radio" name="food" value="drink"> Drink
+      </label>
+      <label>
+        <input type="radio" name="food" value="combo"> Combo
+      </label>
+    </div>
+    <button id="order-btn">ORDER FOOD</button>
+    <div id="summary" class="hidden">
+      <h2 class="message">Congratulations!! Your order has been successfully placed.</h2>
+      <h2>Order Summary</h2>
+      <p>Order ID: <span id="orderId"></span></p>
+      <p>Date and Time: <span id="order-date"></span></p>
+      <p>You ordered: <span id="ordered-item"></span></p>
+      <img src="images/" alt="FoodItems" id="order-img">
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
